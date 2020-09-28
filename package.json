@@ -1,0 +1,23 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "$(npm bin)/cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marija-krsteva/js-projects.git"
+  },
+  "author": "Marija Krsteva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marija-krsteva/js-projects/issues"
+  },
+  "homepage": "https://github.com/marija-krsteva/js-projects#readme"
+}
