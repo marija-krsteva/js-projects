@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Small web app that lets you create a tasks list">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Materialize, Tasks">
+    <meta name="author" content="Marija Krsteva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+    <style>
+        .card .text-bold {
+            font-weight: 500;
+        }
+        .project-link {
+            display:inline-block;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h3 class="center-align">My projects</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l4">
+                <div class="card small sticky-action hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/task-list.JPG">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator blue-text lighten-4-text text-bold">Tasks List</span>
+                    </div>
+                    <div class="card-action"><a href="task-list/index.html" target="_blank" class="blue-text lighten-4-text project-link">See project</a></div>
+                    <div class="card-reveal blue lighten-4">
+                        <span class="card-title grey-text text-darken-4 text-bold">Tasks List<i class="material-icons right">close</i></span>
+                        <p>Create your own task list. Add a new task, remove existing one, or remove all of your tasks. Uses local storage so your tasks are not lost upon closing the browser.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card small sticky-action hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/loan-calculator.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator indigo-text lighten-4-text text-bold">Loan Calculator</span>
+                    </div>
+                    <div class="card-action"><a href="loan-calculator/index.html" target="_blank" class="indigo-text lighten-4-text project-link">See project</a></div>
+                    <div class="card-reveal indigo lighten-4">
+                        <span class="card-title grey-text text-darken-4 text-bold">Loan Calculator<i class="material-icons right">close</i></span>
+                        <p>Calculate the Monthly Payment, Total Payment and Total Interest of your loan, by inputing the Loan, Interest and Years to repay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>          
+</body>
+</html>
