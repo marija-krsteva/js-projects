@@ -1,3 +1,7 @@
+beforeEach(() => {
+    cy.visit('/task-list/');
+  });
+
 it('checks if todo not inputed', () => {
     cy.visit('/task-list/');
     cy.get('.toast').should('not.exist');
@@ -12,21 +16,6 @@ it('checks if todo not inputed', () => {
     cy.wait(1600);
     cy.get('.toast').should('not.exist');
 });  
-
-it('checks if error appears when calculation fails', () => {
-    cy.visit('/loan-calculator/');
-    cy.get('#amount').type('5');
-    cy.get('#interest').type('5');
-    cy.get('#years').type('0');
-    cy.get('#submit').click();
-    cy.get('#loading').should('be.visible');
-    cy.wait(1500);
-    cy.get('#loading').should('not.be.visible');
-    cy.get('#results').should('not.be.visible');
-    cy.get('.error').should('exist');
-    cy.wait(3000);
-    cy.get('.error').should('not.exist');
-});
 
 it('checks if todo inputed', () => {
     cy.visit('/task-list/');
