@@ -1,5 +1,5 @@
 beforeEach(() => {
-    cy.visit('/booklist/');
+    cy.visit('/projects/booklist/');
 });
 
 it('checks if error appears when inputs empty', () => {

@@ -1,5 +1,5 @@
 beforeEach(() => {
-    cy.visit('/loan-calculator/');
+    cy.visit('/projects/loan-calculator/');
 });
 
 it('checks that loader and results are hidden', () => {

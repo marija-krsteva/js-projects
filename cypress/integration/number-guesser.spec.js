@@ -1,5 +1,5 @@
 beforeEach(() => {
-    cy.visit('/number-guesser/');
+    cy.visit('/projects/number-guesser/');
 });
 
 it('checks if game starts correctly', () => {

@@ -1,5 +1,5 @@
 beforeEach(() => {
-    cy.visit('/task-list/');
+    cy.visit('/projects/task-list/');
   });
 
 it('checks if todo not inputed', () => {
