@@ -1,5 +1,8 @@
-it('checks if game starts correctly', () => {
+beforeEach(() => {
     cy.visit('/number-guesser/');
+});
+
+it('checks if game starts correctly', () => {
     cy.get('#guess-input').should('have.value','');
     cy.get('#guess-btn').should('have.value','Submit');
     cy.get('.min-num').then(($min) => {
@@ -16,7 +19,6 @@ it('checks if game starts correctly', () => {
 });
 
 it('checks if invalid input', () => {
-    cy.visit('/number-guesser/');
     cy.window().its('winningNum').then(($winningNum) => {
         const guessedNum = $winningNum == 10 ? 9 : 10;
 
@@ -49,7 +51,6 @@ it('checks if invalid input', () => {
   
 
 it('checks if game lost', () => {
-    cy.visit('/number-guesser/');
     cy.window().its('winningNum').then(($winningNum) => {
         const guessedNum = $winningNum == 10 ? 9 : 10;
 
@@ -86,7 +87,6 @@ it('checks if game lost', () => {
 });
 
 it('checks if game won after 3 guesses', () => {
-    cy.visit('/number-guesser/');
     cy.window().its('winningNum').then(($winningNum) => {
         const guessedNum = $winningNum == 10 ? 9 : 10;
 
@@ -123,7 +123,6 @@ it('checks if game won after 3 guesses', () => {
 });
 
 it('checks if game won first try', () => {
-    cy.visit('/number-guesser/');
     window.winningNum = 5;
     cy.window().its('winningNum').then(($winningNum) => {
         cy.get('#guess-input').should('have.value','');
@@ -147,7 +146,6 @@ it('checks if game won first try', () => {
 });
 
 it('checks if game won after 2 guesses', () => {
-    cy.visit('/number-guesser/');
     cy.window().its('winningNum').then(($winningNum) => {
         const guessedNum = $winningNum == 10 ? 9 : 10;
 

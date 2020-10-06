@@ -3,7 +3,6 @@ beforeEach(() => {
   });
 
 it('checks if todo not inputed', () => {
-    cy.visit('/task-list/');
     cy.get('.toast').should('not.exist');
     cy.get('#task').invoke('val').should("be.empty");
     cy.get('#task-form').then(form$ => {
@@ -18,7 +17,6 @@ it('checks if todo not inputed', () => {
 });  
 
 it('checks if todo inputed', () => {
-    cy.visit('/task-list/');
     cy.get('#task').type('write tests{enter}');
     cy.get('.collection-item').should(($lis) => {
         expect($lis.eq(0)).to.contain('write tests');
@@ -27,7 +25,6 @@ it('checks if todo inputed', () => {
 });
 
 it('checks if todo stays after reload', () => {
-    cy.visit('/task-list/');
     cy.get('#task').type('write tests{enter}');
     cy.get('.collection-item').should(($lis) => {
         expect($lis.eq(0)).to.contain('write tests');
@@ -41,7 +38,6 @@ it('checks if todo stays after reload', () => {
 });
 
 it('checks if todo gets removed', () => {
-    cy.visit('/task-list/');
     cy.get('#task').type('write tests{enter}');
     cy.get('.collection-item').should(($lis) => {
         expect($lis.eq(0)).to.contain('write tests');
@@ -56,7 +52,6 @@ it('checks if todo gets removed', () => {
 });
 
 it('checks if all todos get removed', () => {
-    cy.visit('/task-list/');
     cy.get('#task').type('write tests{enter}');
     cy.get('#task').type('write more tests{enter}');
     cy.get('.collection-item').should(($lis) => {
