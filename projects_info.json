@@ -1,0 +1,38 @@
+{
+    "Tasks List": {
+        "image" : "task-list",
+        "color" : "blue",
+        "link" : "task-list",
+        "description" : "Create your own task list. Add a new task, remove existing one, or remove all of your tasks. Uses local storage so your tasks are not lost upon closing the browser. Made with Materialize and Material dialog."
+    },
+    "Loan Calculator": {
+        "image" : "loan-calculator",
+        "color" : "indigo",
+        "link" : "loan-calculator",
+        "description" : "Calculate the Monthly Payment, Total Payment and Total Interest of your loan, by inputing the Loan, Interest and Years to repay. Made with Bootstrap 4.5.2."
+    },
+    "Number Game": {
+        "image" : "number-game",
+        "color" : "blue-grey",
+        "link" : "number-guesser",
+        "description" : "Play a simple number game. You get three tryies to guess a random number from 1 to 10. Made with Skeleton."
+    },
+    "Book List": {
+        "image" : "booklist",
+        "color" : "deep-orange",
+        "link" : "booklist",
+        "description" : "Create a book list. Each book has a title, author and ISBN#. The list is saved using Local Storage. Made with Skeleton."
+    },
+    "Chuck Norris Jokes": {
+        "image" : "chuck-norris-jokes-generator",
+        "color" : "red",
+        "link" : "chuck_norris_jokes",
+        "description" : "Using the XMLHttpRequest object, an external API is called that returns jokes about Chuck Norris. The number of jokes depends on the inputed number."
+    },
+    "Easy HTTP Library": {
+        "image" : "task-list",
+        "color" : "purple",
+        "link" : "ajax_library",
+        "description" : "Created a small library for making REST API calls with XMLHttpRequest object. Using prototypes instead of classes."
+    }
+}
