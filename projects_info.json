@@ -29,10 +29,22 @@
         "link" : "chuck_norris_jokes",
         "description" : "Using the XMLHttpRequest object, an external API is called that returns jokes about Chuck Norris. The number of jokes depends on the inputed number."
     },
-    "Easy HTTP Library": {
-        "image" : "task-list",
+    "HTTP Library": {
+        "image" : "easyHTTPExamle",
         "color" : "purple",
         "link" : "ajax_library",
         "description" : "Created a small library for making REST API calls with XMLHttpRequest object. Using prototypes instead of classes."
+    },
+    "HTTP Library 2": {
+        "image" : "easyHTTPExamle2",
+        "color" : "deep-purple",
+        "link" : "fetch_library",
+        "description" : "Small library for making REST API calls with fetch, using Promise and classes."
+    },
+    "HTTP Library 3": {
+        "image" : "easyHTTPExamle3",
+        "color" : "indigo",
+        "link" : "fetch_library_await",
+        "description" : "Upgrade of the previous library, using async and await."
     }
 }

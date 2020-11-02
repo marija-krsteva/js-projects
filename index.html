@@ -25,99 +25,51 @@
                 <h3 class="center-align">My projects</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col s12 m6 l4">
-                <div class="card small sticky-action hoverable">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/task-list.JPG">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator blue-text lighten-4-text text-bold">Tasks List</span>
-                    </div>
-                    <div class="card-action"><a href="projects/task-list/index.html" target="_blank" class="blue-text lighten-4-text project-link">See project</a></div>
-                    <div class="card-reveal blue lighten-4">
-                        <span class="card-title grey-text text-darken-4 text-bold">Tasks List<i class="material-icons right">close</i></span>
-                        <p>Create your own task list. Add a new task, remove existing one, or remove all of your tasks. Uses local storage so your tasks are not lost upon closing the browser. Made with Materialize and Material dialog</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l4">
-                <div class="card small sticky-action hoverable">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/loan-calculator.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator indigo-text lighten-4-text text-bold">Loan Calculator</span>
-                    </div>
-                    <div class="card-action"><a href="projects/loan-calculator/index.html" target="_blank" class="indigo-text lighten-4-text project-link">See project</a></div>
-                    <div class="card-reveal indigo lighten-4">
-                        <span class="card-title grey-text text-darken-4 text-bold">Loan Calculator<i class="material-icons right">close</i></span>
-                        <p>Calculate the Monthly Payment, Total Payment and Total Interest of your loan, by inputing the Loan, Interest and Years to repay. Made with Bootstrap 4.5.2</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l4">
-                <div class="card small sticky-action hoverable">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/number-game.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator blue-grey-text lighten-4-text text-bold">Number Game</span>
-                    </div>
-                    <div class="card-action"><a href="projects/number-guesser/index.html" target="_blank" class="blue-grey-text lighten-4-text project-link">See project</a></div>
-                    <div class="card-reveal blue-grey lighten-4">
-                        <span class="card-title grey-text text-darken-4 text-bold">Number Game<i class="material-icons right">close</i></span>
-                        <p>Play a simple number game. You get three tryies to guess a random number from 1 to 10. Made with Skeleton.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l4">
-                <div class="card small sticky-action hoverable">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/booklist.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator deep-orange-text lighten-4-text text-bold">Book List</span>
-                    </div>
-                    <div class="card-action"><a href="projects/booklist/index.html" target="_blank" class="deep-orange-text lighten-4-text project-link">See project</a></div>
-                    <div class="card-reveal deep-orange lighten-4">
-                        <span class="card-title grey-text text-darken-4 text-bold">Book List<i class="material-icons right">close</i></span>
-                        <p>Create a book list. Each book has a title, author and ISBN#. The list is saved using Local Storage. Made with Skeleton.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l4">
-                <div class="card small sticky-action hoverable">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/chuck-norris-jokes-generator.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator red-text lighten-4-text text-bold">Chuck Norris Jokes</span>
-                    </div>
-                    <div class="card-action"><a href="projects/chuck_norris_jokes/index.html" target="_blank" class="red-text lighten-4-text project-link">See project</a></div>
-                    <div class="card-reveal red lighten-4">
-                        <span class="card-title grey-text text-darken-4 text-bold">Chuck Norris Jokes<i class="material-icons right">close</i></span>
-                        <p>Using the XMLHttpRequest object, an external API is called that returns jokes about Chuck Norris. The number of jokes depends on the inputed number.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l4">
-                <div class="card small sticky-action hoverable">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/easyHTTPExamle.jpg" />
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator purple-text lighten-4-text text-bold">Easy HTTP Library</span>
-                    </div>
-                    <div class="card-action"><a href="projects/ajax_library/index.html" target="_blank" class="purple-text lighten-4-text project-link">See project</a></div>
-                    <div class="card-reveal purple lighten-4">
-                        <span class="card-title grey-text text-darken-4 text-bold">Easy HTTP Library<i class="material-icons right">close</i></span>
-                        <p>Created a small library for making REST API calls with XMLHttpRequest object. Using prototypes instead of classes.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="row" id="projects">
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>          
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Function used to get all the projects from the projects_info.json file
+        function getProjects() {
+            return new Promise((resolve, reject) => {
+                fetch('projects_info.json')
+                .then(res => res.json())
+                .then(data => resolve(data))
+                .catch(err => reject(err));
+            });
+        }
+
+        // Function used to create the HTML for all projects
+        function showProjects(projects) {
+            let output = '';
+
+            for (var project in projects) {
+                output += `
+                    <div class="col s12 m6 l4">
+                    <div class="card small sticky-action hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/${projects[project].image}.jpg" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator ${projects[project].color}-text lighten-4-text text-bold">${project}</span>
+                        </div>
+                        <div class="card-action"><a href="projects/${projects[project].link}/index.html" target="_blank" class="${project.color}-text lighten-4-text project-link">See project</a></div>
+                        <div class="card-reveal ${projects[project].color} lighten-4">
+                            <span class="card-title grey-text text-darken-4 text-bold">${project}<i class="material-icons right">close</i></span>
+                            <p>${projects[project].description}</p>
+                        </div>
+                    </div>
+                </div>
+                `;
+            }
+            document.getElementById('projects').innerHTML = output;
+        }
+
+        // Call functions so the perojects appear
+        getProjects()
+        .then(data => showProjects(data))
+        .catch(err => console.log(err));    
+    </script>          
 </body>
 </html>

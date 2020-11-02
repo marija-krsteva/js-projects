@@ -16,7 +16,6 @@ function getJokes(e) {
             if(this.status === 200) {
                 const response = JSON.parse(this.responseText);
     
-                console.log(response);
                 if(response.type === 'success') {
                     response.value.forEach(joke => {
                         output += `<li>${joke.joke}</li>`
