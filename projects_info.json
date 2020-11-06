@@ -46,5 +46,11 @@
         "color" : "indigo",
         "link" : "fetch_library_await",
         "description" : "Upgrade of the previous library, using async and await."
+    },
+    "GitHub Users Finder": {
+        "image" : "github-users",
+        "color" : "cyan",
+        "link" : "github_finder",
+        "description" : "Using GitHub's API, search for a user by theirs username and output information about that user, including their latest 5 public repos. Uses Bootswatch for UI. API call made with Fetch using await and async."
     }
 }
