@@ -1,6 +1,6 @@
 beforeEach(() => {
     cy.visit('/projects/task-list/');
-  });
+});
 
 it('checks if todo not inputed', () => {
     cy.get('.toast').should('not.exist');

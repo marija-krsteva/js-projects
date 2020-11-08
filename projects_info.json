@@ -1,20 +1,20 @@
 {
     "Tasks List": {
         "image" : "task-list",
-        "color" : "blue",
-        "link" : "task-list",
+        "color" : "pink",
+        "link" : "task_list",
         "description" : "Create your own task list. Add a new task, remove existing one, or remove all of your tasks. Uses local storage so your tasks are not lost upon closing the browser. Made with Materialize and Material dialog."
     },
     "Loan Calculator": {
         "image" : "loan-calculator",
         "color" : "indigo",
-        "link" : "loan-calculator",
+        "link" : "loan_calculator",
         "description" : "Calculate the Monthly Payment, Total Payment and Total Interest of your loan, by inputing the Loan, Interest and Years to repay. Made with Bootstrap 4.5.2."
     },
     "Number Game": {
         "image" : "number-game",
         "color" : "blue-grey",
-        "link" : "number-guesser",
+        "link" : "number_guesser",
         "description" : "Play a simple number game. You get three tryies to guess a random number from 1 to 10. Made with Skeleton."
     },
     "Book List": {
@@ -52,5 +52,11 @@
         "color" : "cyan",
         "link" : "github_finder",
         "description" : "Using GitHub's API, search for a user by theirs username and output information about that user, including their latest 5 public repos. Uses Bootswatch for UI. API call made with Fetch using await and async."
+    },
+    "Weather App": {
+        "image" : "weather-app",
+        "color" : "blue",
+        "link" : "weather_app",
+        "description" : "An app that shows weather information for a chosen City. Uses Open Weather's API and local storage to remember the last searched city ."
     }
 }
