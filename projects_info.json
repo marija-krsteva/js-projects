@@ -57,6 +57,12 @@
         "image" : "weather-app",
         "color" : "blue",
         "link" : "weather_app",
-        "description" : "An app that shows weather information for a chosen City. Uses Open Weather's API and local storage to remember the last searched city ."
+        "description" : "An app that shows weather information for a chosen City. Uses Open Weather's API and local storage to remember the last searched city."
+    },
+    "User Form": {
+        "image" : "form_validation",
+        "color" : "teal",
+        "link" : "form_validation",
+        "description" : "User form that is validated using regular expressions. UI build using Bootstrap."
     }
 }
