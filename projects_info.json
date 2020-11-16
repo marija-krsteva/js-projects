@@ -64,5 +64,12 @@
         "color" : "teal",
         "link" : "form_validation",
         "description" : "User form that is validated using regular expressions. UI build using Bootstrap."
+    },
+    "Profile scroller": {
+        "image" : "profile_scroller",
+        "color" : "lime",
+        "link" : "profile_scroller",
+        "description" : "Small app that uses iterator function to scroll through people's dating profile. UI build using Bootstrap."
     }
 }
+
