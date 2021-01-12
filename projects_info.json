@@ -70,6 +70,12 @@
         "color" : "lime",
         "link" : "profile_scroller",
         "description" : "Small app that uses iterator function to scroll through people's dating profile. UI build using Bootstrap."
+    },
+    "State Pattern": {
+        "image" : "state-pattern",
+        "color" : "green",
+        "link" : "state_pattern",
+        "description" : "App build with the state pattern. UI build using Bootstrap 5."
     }
 }
 
