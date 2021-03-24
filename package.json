@@ -2,13 +2,25 @@
   "name": "1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
-    "cypress": "^5.2.0"
+    "cypress": "^5.2.0",
+    "json-server": "^0.16.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.10"
+  },
   "scripts": {
-    "test": "$(npm bin)/cypress run"
+    "test": "$(npm bin)/cypress run",
+    "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
+    "build": "webpack --mode production --progress",
+    "json:server": "json-server --watch projects/micropost/api/db.json"
   },
   "repository": {
     "type": "git",

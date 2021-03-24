@@ -76,6 +76,12 @@
         "color" : "green",
         "link" : "state_pattern",
         "description" : "App build with the state pattern. UI build using Bootstrap 5."
+    },
+    "Micropost": {
+        "image" : "micropost",
+        "color" : "orange",
+        "link" : "micropost_live",
+        "description" : "Create, Update and Delete posts. Works with Json Server. App build with the state pattern. UI build using Bootstrap 5. "
     }
 }
 
