@@ -13,7 +13,7 @@ describe('GitHub Users Finder', () => {
     });
 
     it('shows error if no user is found', () => {
-        cy.get('#searchUser').type('abbbbaa');
+        cy.get('#searchUser').type('4589iutoiy72euiiujjudjf432432132153432423fdefdsrefreferfrcdscs534');
         cy.wait(1000);
         cy.get('.alert-danger').should('exist').and('be.visible');
         cy.get('#repos').should('not.exist');
