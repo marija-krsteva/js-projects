@@ -11,30 +11,32 @@ const weather = new Weather(weatherLocation);
 const ui = new UI;
 
 // Get weather on DOM load
-document.addEventListener('DOMContentLoaded', getWeather);
+document.addEventListener('DOMContentLoaded', getWeather(weatherLocation));
 
 // Change location event
 document.getElementById('w-change-btn').addEventListener('click', (e) => {
     const city = document.getElementById('city').value;
     document.getElementById('city').value = '';
 
-    // Change location
-    weather.changeLocation(city);
-
-    // Set location in local storage
-    storage.setLocationData(city);    
-    
-    getWeather();
+    getWeather(city);
 
     // Close modal
     $('#locModal').modal('hide');
 });
 
 // Get and display weather
-function getWeather() {
-    weather.getWeather()
+function getWeather(city) {
+    weather.getWeather(city)
     .then(results => {
         ui.paint(results);
+        // Change location
+        weather.changeLocation(city);
+
+        // Set location in local storage
+        storage.setLocationData(city);  
     })
-    .catch(error => console.log(error));
+    .catch(error => {
+        ui.error('Error occured while retreaving data')
+        console.log(error);
+    });
 }

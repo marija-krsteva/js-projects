@@ -5,10 +5,12 @@ class Weather {
     }
 
     // Fetch weather from API
-    async getWeather() {
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${this.apiKey}&units=metric`);
+    async getWeather(city) {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}&units=metric`);
         const responseData = await response.json();
-        
+        if (responseData.cod !== 200) {
+            throw responseData.message;
+        }
         return responseData;
     }
 
