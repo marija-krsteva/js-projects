@@ -14,6 +14,7 @@ describe('GitHub Users Finder', () => {
 
     it('shows error if no user is found', () => {
         cy.get('#searchUser').type('abbbbaa');
+        cy.wait(1000);
         cy.get('.alert-danger').should('exist').and('be.visible');
         cy.get('#repos').should('not.exist');
         cy.get('#profile').should('be.empty');
