@@ -22,13 +22,13 @@ const homeState = function(page) {
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../../images/chuck-norris-jokes-generator.jpg" class="d-block w-100" alt="...">
+                    <img src="../../images/chuck-norris-jokes-generator.jpg" class="d-block" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="../../images/form_validation.jpg" class="d-block w-100" alt="...">
+                    <img src="../../images/form_validation.jpg" class="d-block" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="../../images/task-list.jpg" class="d-block w-100" alt="...">
+                    <img src="../../images/tasks-list.jpg" class="d-block" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">

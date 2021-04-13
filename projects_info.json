@@ -1,6 +1,6 @@
 {
     "Tasks List": {
-        "image" : "task-list",
+        "image" : "tasks-list",
         "color" : "pink",
         "link" : "task_list",
         "description" : "Create your own task list. Add a new task, remove existing one, or remove all of your tasks. Uses local storage so your tasks are not lost upon closing the browser. Made with Materialize and Material dialog."
